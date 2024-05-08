@@ -17,3 +17,22 @@
 Setelah server dijalankan dan 3 client mengirimkan pesan, dari output di atas dapat terlihat bahwa setiap client dan juga server menerima siaran obrolan dari setiap client. Setiap kali seorang client mengetikkan pesan di baris perintah, string tersebut akan dikirim ke server dan server akan terus mengirimkannya ke semua client yang terhubung dengannya.
 
 
+
+Apabila port client dan serer sama, maka aplikasi dapat berjalan dengan lancar
+#### Client
+![client same port](assets/images/client-sameport.png)
+
+#### Server
+![server same port](assets/images/server-sameport.png)
+
+
+Namun, jika misalnya kita hanya mengubah salah satu port, misalnya port server menjadi 8080 dan port client tetap 2000, maka akan terjadi error pada client karena menurut client port tersebut tidak memiliki koneksi
+
+#### Client
+![client different port](assets/images/client-differentport.png)
+
+#### Server
+![server different port](assets/images/server-differentport.png)
+
+
+
